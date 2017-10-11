@@ -22,12 +22,12 @@ rápida e precisa no sistema.
    6. Sistema verifica saldo.
    7. Sistema exibe uma mensagem ao usuário informando que o fechamento da conta foi concluído com sucesso.
    
-+Extensões
-	2. Erro de autenticação
-	    1. Sistena avisa o erro e rejeita a entrada.
-	    2. Sistema solicita a inserção dos dados novamente.
-	6. Saldo diferente de zero.
-		6.1 Saldo positivo
-			1. Sistema solicita ao usuário que saque o dinheiro.
-		6.2 Saldo negativo
-			1. Sistema solicita ao usuário que deposite um valar que zere seu saldo.
++Extensões:
+   2. Erro de autenticação.
+     -Sistena avisa o erro e rejeita a entrada.
+     -Sistema solicita a inserção dos dados novamente.
+   6. Saldo diferente de zero.
+	-Saldo positivo.
+	  	-Sistema solicita ao usuário que saque o dinheiro.
+	-Saldo negativo.
+		-Sistema solicita ao usuário que deposite um valar que zere seu saldo.
