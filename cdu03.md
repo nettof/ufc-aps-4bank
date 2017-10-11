@@ -1,0 +1,62 @@
++Escopo: Aplicativo 4Bank
+
++Nível: Objetivo do usuário
+
++Ator principal: Cliente do banco
+
++Interessados e interesses: 
+- CLiente do banco: deseja realizar a transferência de forma rápida, precisa e sem erros, e com o mínimo de esforço possível. Deseja a exibição, facilmente visível e compreensível, do status atual do seu saldo. Deseja um comprovante de transferência para possíveis adversidades que eventualmente 
+possam vir à ocorrer. 
+- Banco: deseja registrar precisamente as transferências e satisfazer os interesses do cliente. Deseja proteção contra falhas para garantir a 
+atualização de saldo após a transferência. Deseja uma atualização rápida e precisa no sistema.
+- Destinatário de transferência: espera uma atualização rápida e eficiente do seu saldo, sem erros ou transtornos.
+
++Pré-condições: Cliente está devidamente autenticado e identificado pelo sistema. O mesmo precisa ter saldo disponível, no mínimo o valor da transferência.
+
++Garantia de Sucesso (ou Pós-condição): Atualização de saldo.
+
++Cenário de sucesso principal (ou Fluxo Básico): 
+   1. Cliente entra no App ou insere cartão.
+   2. Cliente se autentica.
+   3. Cliente vai a ferramenta de transação
+   4. Cliente insere os dados da conta referente a conta destinatária e o valor de transferência.
+   5. Sistema registra e autoriza a transferência segundo um conjunto de regras de transferência.
+   6. Sistema informa que a operação foi realizada com sucesso.
+   7. Sistema atualiza o saldo.
+   8. Sistema gera um comprovante de transferência.
+   9. Cliente encerra sua sessão e fecha o App.   
+
++Extensões (ou Fluxos Alternativos)
+  1. MultiBank não reconhece o cartão (se for no cartão)
+      1. Sistema envia uma mensagem de alerta para a equipe de monitoramento.
+      2. É exibida uma mensagem de cartão não reconhecido.
+	  2. Solicita a inserção do cartão novamente.
+  2. Erro de autenticação
+      3.1 Se for no cartão
+        1. Sistena avisa o erro e rejeita a entrada.
+	    2. Sistema solicita a inserção novamente.
+	  3.2 Se for no aplicativo
+	    1. Sistena avisa o erro e rejeita a entrada.
+	    2. Sistema solicita a inserção dos dados novamente.
+  4a. Valor de entrada é inválido
+     1. Sistema avisa que a operação não pode ser realizada e que a entrada é inválida.
+	 2. Sistema rejeita a entrada.
+     3. Sistema solicita a inserção novamente.
+  4b. Cliente pede para cancelar a transferência
+     1. Sistema cancela a transferência.
+  4c. Dados da conta inválidos
+     1. Sistema avisa o erro e rejeita a entrada.
+	 2. Sistema solicita a inserção dos dados novamente.
+  4d. Valor de entrada da tranferência é maior que o saldo	
+     1. Sistema avisa que a operação não pode ser realizada e rejeita a entrada.
+     2. Sistema solicita a alteração do valor.
+  5. Sistema detecta falha na comunicação com o serviço externo 
+     1. Sistema reinicia esse serviço e continua.
+	   1.1 Sistema detecta que o serviço nao reinicia.
+	      1. Sistema avisa o erro.
+		  2. Sistema cancela transferência;
+  8. Falha na geração de comprovante de tranferência
+     1. Sistema avisa o erro.
+	 2. Sistema tenta novamente gerar o comprovante
+	   1.1 Sistema detecta falha
+	   1.2 Sistema sugere ao cliente consultar o histórico de conta.
