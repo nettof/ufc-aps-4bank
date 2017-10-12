@@ -1,19 +1,19 @@
-Nome: Francisco Wilson Angelo Pinto
-Idade: 19 anos<p>
-Competência: Programador<p>
+**Nome: Francisco Wilson Angelo Pinto**<br />
+Idade: 19 anos<br />
+Competência: Programador<br />
 Atribuições: Desenvolvedor
 
-Nome: Ícaro de Sena Mourão
-Idade: 20 anos<p>
-Competência: Projetista<p>
+**Nome: Ícaro de Sena Mourão**<br />
+Idade: 20 anos<br />
+Competência: Projetista<br />
 Atribuições: Arquiteto; Testador
 
-Nome: José Furtado Neto
-Idade: 19 anos<p>
-Competência: Gerente de Desenvolvimento<p>
+**Nome: José Furtado Neto**<br />
+Idade: 19 anos<br />
+Competência: Gerente de Desenvolvimento<br />
 Atribuições: Autor; Administrador
 
-Nome: Natã Santana de Morais
-Idade: 19 anos<p>
-Competência: Programador; Artista<p>
+**Nome: Natã Santana de Morais**<br />
+Idade: 19 anos<br />
+Competência: Programador; Artista<br />
 Atribuições: Desenvolvedor; Designer
