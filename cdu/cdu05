@@ -33,16 +33,16 @@ Extensões (Fluxos Alternativos)
 2. Erro de autenticação
       2.1 Se for no cartão
             1. Sistena avisa o erro e rejeita a entrada.
-	          2. Sistema solicita a inserção novamente.
-	    2.2 Se for no aplicativo
-	          1. Sistena avisa o erro e rejeita a entrada.
-	          2. Sistema solicita a inserção dos dados novamente.
+	    2. Sistema solicita a inserção novamente.
+      2.2 Se for no aplicativo
+	    1. Sistena avisa o erro e rejeita a entrada.
+	    2. Sistema solicita a inserção dos dados novamente.
             
 4. Sistema detecta falha na comunicação 
       1. Sistema reinicia esse serviço e continua.
-	          1.1 Sistema detecta que o serviço nao reinicia.
-	                1. Sistema avisa o erro.
-		              2. Sistema cancela geração de extrato. 
+            1.1 Sistema detecta que o serviço nao reinicia.
+	          1. Sistema avisa o erro.
+		  2. Sistema cancela geração de extrato. 
                         2.1 Cartão inválido: sistema avisa erro.
                         
 11. Ferramenta de impressao do MultiBank não tem papel ou tinta
