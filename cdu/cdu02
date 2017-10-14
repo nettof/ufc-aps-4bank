@@ -46,27 +46,27 @@ Extensões (ou Fluxos Alternativos).
       
 3. Erro de autenticação.
       3.1. Se for no cartão.
-              1. Sistena avisa o erro e rejeita a entrada.
-	            2. Sistema solicita a inserção novamente.
-	    3.2. Se for no aplicativo.
-	            1. Sistena avisa o erro e rejeita a entrada.
-	            2. Sistema solicita a inserção dos dados novamente.
+            1. Sistena avisa o erro e rejeita a entrada.
+	    2. Sistema solicita a inserção novamente.
+      3.2. Se for no aplicativo.
+	    1. Sistena avisa o erro e rejeita a entrada.
+	    2. Sistema solicita a inserção dos dados novamente.
               
 4a. Cliente pede para cancelar o depósito.
        1. Sistema cancela o depósito.
        
 5. Sistema detecta falha na comunicação com o serviço externo do MultiBank.
       1. Sistema reinicia esse serviço e continua.
-	          1.1 Sistema detecta que o serviço nao reinicia.
-	                1. Sistema avisa o erro.
-		              2. Sistema informa a opçao de depósito com o cartão ou finaliza a chamada. 
+            1.1 Sistema detecta que o serviço nao reinicia.
+	          1. Sistema avisa o erro.
+		  2. Sistema informa a opçao de depósito com o cartão ou finaliza a chamada. 
                   
 6. Código inválido (não encontrado no sistema).
       1. Sistema avisa o erro e rejeita a entrada.
       2. Cliente responde ao erro.
             2.1. Existe outra maneira de entrada.
-              1. Cliente insere o cartão no MultiBank.
-                    1.1 Cartão inválido: sistema avisa erro.
+                    1. Cliente insere o cartão no MultiBank.
+                          1.1 Cartão inválido: sistema avisa erro.
                     
 8. Valor depositado diferente do depósito especificado.
       1. Sistema detecta o erro.
