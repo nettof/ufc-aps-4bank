@@ -48,12 +48,12 @@ Extensões (ou Fluxos Alternativos)
        2. Sistema rejeita a entrada.
        3. Sistema solicita a identificação novamente.
 
-5. Cliente pede para cancelar o pagamento
-      1. Sistema cancela o pagamento.
+5a. Cliente pede para cancelar o pagamento
+       1. Sistema cancela o pagamento.
 
-5. Saldo é menor que o valor de pagamento	
-      1. Sistema avisa que a operação não pode ser realizada e rejeita a entrada.
-      2. Sistema solicita a alteração do valor.
+5b. Saldo é menor que o valor de pagamento	
+       1. Sistema avisa que a operação não pode ser realizada e rejeita a entrada.
+       2. Sistema solicita a alteração do valor.
       
 6. Sistema detecta falha na comunicação com o serviço externo 
       1. Sistema reinicia esse serviço e continua.
