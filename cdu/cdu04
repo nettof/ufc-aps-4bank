@@ -38,14 +38,14 @@ Extensões (ou Fluxos Alternativos)
 2. Erro de autenticação
       2.1 Se for no cartão
             1. Sistena avisa o erro e rejeita a entrada.
-	          2. Sistema solicita a inserção novamente.
-	    2.2 Se for no aplicativo
-	          1. Sistena avisa o erro e rejeita a entrada.
-	          2. Sistema solicita a inserção dos dados novamente.
+	    2. Sistema solicita a inserção novamente.
+      2.2 Se for no aplicativo
+	    1. Sistena avisa o erro e rejeita a entrada.
+	    2. Sistema solicita a inserção dos dados novamente.
             
 4a. Falha na identificação
        1. Sistema avisa que ocorreu um erro.
-	     2. Sistema rejeita a entrada.
+       2. Sistema rejeita a entrada.
        3. Sistema solicita a identificação novamente.
 
 5. Cliente pede para cancelar o pagamento
