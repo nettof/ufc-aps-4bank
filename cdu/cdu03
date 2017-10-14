@@ -38,10 +38,10 @@ Extensões (ou Fluxos Alternativos).
 2. Erro de autenticação.
       2.1 Se for no cartão.
             1. Sistena avisa o erro e rejeita a entrada.
-	          2. Sistema solicita a inserção novamente.
-	    2.2 Se for no aplicativo.
-	          1. Sistena avisa o erro e rejeita a entrada.
-	          2. Sistema solicita a inserção dos dados novamente.
+	    2. Sistema solicita a inserção novamente.
+      2.2 Se for no aplicativo.
+	    1. Sistena avisa o erro e rejeita a entrada.
+	    2. Sistema solicita a inserção dos dados novamente.
 
 4a. Valor de entrada é inválido.
        1. Sistema avisa que a operação não pode ser realizada e que a entrada é inválida.
@@ -61,12 +61,12 @@ Extensões (ou Fluxos Alternativos).
 
 5. Sistema detecta falha na comunicação com o serviço externo.
       1. Sistema reinicia esse serviço e continua.
-	          1.1 Sistema detecta que o serviço nao reinicia.
-	                1. Sistema avisa o erro.
-		              2. Sistema cancela transferência.
+            1.1 Sistema detecta que o serviço nao reinicia.
+	          1. Sistema avisa o erro.
+		  2. Sistema cancela transferência.
                   
 8. Falha na geração de comprovante de tranferência.
       1. Sistema avisa o erro.
       2. Sistema tenta novamente gerar o comprovante.
-	          2.1 Sistema detecta falha.
-	          2.2 Sistema sugere ao cliente consultar o histórico de conta.
+            2.1 Sistema detecta falha.
+	    2.2 Sistema sugere ao cliente consultar o histórico de conta.
