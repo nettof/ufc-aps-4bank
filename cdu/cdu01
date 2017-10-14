@@ -15,7 +15,7 @@ atualização de saldo após o saque. Deseja uma atualização rápida e precisa
 
 Pré-condições: Cliente está devidamente autenticado e identificado pelo sistema. O mesmo precisa ter saldo disponível.
 
-Garantia de Sucesso (Pós-condição)**:Atualização de saldo. Cliente com o dinheiro sacado em mãos.
+Garantia de Sucesso (Pós-condição):Atualização de saldo. Cliente com o dinheiro sacado em mãos.
 
 Cenário de sucesso principal (Fluxo Básico):
 1. Cliente chega ao MultiBank 24 Horas com o cartão ou dispositivo com o aplicativo.
@@ -50,7 +50,7 @@ Extensões (Fluxos Alternativos):
       1. Sistema avisa que a operação não pode ser realizada.
       2. Sistema solicita a alteração do valor.
 			
-4a Cliente pede para cancelar o saque.
+4a. Cliente pede para cancelar o saque.
       1. Sistema cancela saque.
 			
 5. Sistema detecta falha na comunicação com o serviço externo do MultiBank.
