@@ -1,0 +1,51 @@
+CDU05: Retirar extrato
+
+Escopo: Aplicativo 4Bank
+
+Nível: Objetivo do usuário
+
+Ator principal: Cliente do banco
+
+Interessados e interesses: 
+- Cliente do banco: deseja retirar o extrato de forma rápida, precisa e sem erros, e com o mínimo de esforço possível. 
+- Banco: deseja registrar precisamente as operações de extrato e satisfazer os interesses do cliente. Deseja uma atualização 
+rápida e precisa no sistema.
+
+Pré-condições: Cliente está devidamente autenticado e identificado pelo sistema. 
+
+Garantia de Sucesso (Pós-condição): O cliente visualiza o extrato gerado pelo App ou com o extrato em mãos.
+
+Cenário de sucesso principal (Fluxo Básico): 
+1. Cliente entra no App ou insere cartão.
+2. Cliente se autentica.
+3. Cliente vai a ferramenta de retirada de extrato
+4. Sistema gera o extrato.
+5. Sistema registra a operação.
+6. Cliente visualiza o extrato
+7. Cliente encerra sua sessão e fecha o App. 
+
+Extensões (Fluxos Alternativos)
+1. MultiBank não reconhece o cartão (se for no cartão)
+      1. Sistema envia uma mensagem de alerta para a equipe de monitoramento.
+      2. É exibida uma mensagem de cartão não reconhecido.
+      3. Solicita a inserção do cartão novamente.
+      
+2. Erro de autenticação
+      2.1 Se for no cartão
+            1. Sistena avisa o erro e rejeita a entrada.
+	          2. Sistema solicita a inserção novamente.
+	    2.2 Se for no aplicativo
+	          1. Sistena avisa o erro e rejeita a entrada.
+	          2. Sistema solicita a inserção dos dados novamente.
+            
+4. Sistema detecta falha na comunicação 
+      1. Sistema reinicia esse serviço e continua.
+	          1.1 Sistema detecta que o serviço nao reinicia.
+	                1. Sistema avisa o erro.
+		              2. Sistema cancela geração de extrato. 
+                        2.1 Cartão inválido: sistema avisa erro.
+                        
+11. Ferramenta de impressao do MultiBank não tem papel ou tinta
+      1. Se o sistema detecta a falha, avisará sobre o problema.
+      2. Funcionario do MultiBank repõe papel ou tinta.
+      3. Cliente solicita outro recibo.
