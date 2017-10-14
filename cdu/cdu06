@@ -30,6 +30,6 @@ Extensões
       2. Sistema solicita a inserção dos dados novamente.
 6. Saldo diferente de zero.
       6.1 Saldo positivo
-			      1. Sistema solicita ao usuário que saque o dinheiro.
+            1. Sistema solicita ao usuário que saque o dinheiro.
       6.2 Saldo negativo
-			      1. Sistema solicita ao usuário que deposite um valar que zere seu saldo.
+	    1. Sistema solicita ao usuário que deposite um valar que zere seu saldo.
