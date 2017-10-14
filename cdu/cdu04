@@ -57,12 +57,12 @@ Extensões (ou Fluxos Alternativos)
       
 6. Sistema detecta falha na comunicação com o serviço externo 
       1. Sistema reinicia esse serviço e continua.
-	          1.1 Sistema detecta que o serviço nao reinicia.
-	                1. Sistema avisa o erro.
-		              2. Sistema cancela pagamento;
+            1.1 Sistema detecta que o serviço nao reinicia.
+	          1. Sistema avisa o erro.
+		  2. Sistema cancela pagamento;
 
 9. Falha na geração de comprovante de tranferência
       1. Sistema avisa o erro.
       2. Sistema tenta novamente gerar o comprovante
-	          2.1 Sistema detecta falha
-	          2.2 Sistema sugere ao cliente consultar o histórico de conta.
+            2.1 Sistema detecta falha
+	    2.2 Sistema sugere ao cliente consultar o histórico de conta.
