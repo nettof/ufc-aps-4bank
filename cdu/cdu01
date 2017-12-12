@@ -37,7 +37,7 @@ Extensões (Fluxos Alternativos):
       1.1 MultiBank não reconhece o cartão
            1. Sistema envia uma mensagem de alerta para a equipe de monitoramento.
            2. É exibida uma mensagem de cartão não reconhecido.
-	         3. Solicita a inserção do cartão novamente.
+	   3. Solicita a inserção do cartão novamente.
 		 
       1.5. Sistema detecta falha na comunicação com o serviço externo do MultiBank.
            1. Sistema reinicia esse serviço e continua.
