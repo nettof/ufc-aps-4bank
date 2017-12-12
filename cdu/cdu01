@@ -39,12 +39,6 @@ Extensões (Fluxos Alternativos):
            2. É exibida uma mensagem de cartão não reconhecido.
 	   3. Solicita a inserção do cartão novamente.
 		 
-      1.5. Sistema detecta falha na comunicação com o serviço externo do MultiBank.
-           1. Sistema reinicia esse serviço e continua.
-                 1.1 Sistema detecta que o serviço nao reinicia.
-	               1. Sistema avisa o erro.
-	               2. Sistema informa a opçao de sacar com o cartão.
-		 
       1.3 Erro de autenticação
             1. Sistena avisa o erro e rejeita a entrada.
 	    2. Sistema solicita a inserção novamente.
