@@ -18,39 +18,40 @@ Pré-condições: Cliente está devidamente autenticado e identificado pelo sist
 Garantia de Sucesso (Pós-condição): Atualização de saldo. 
 
 Cenário de sucesso principal (Fluxo Básico): 
-1. Cliente chega ao MultiBank 24 Horas com o cartão ou dispositivo com o aplicativo.
-2. Cliente insere o cartão no MultiBank ou entra no aplicativo.
+1. Cliente chega ao MultiBank 24 Horas com o dispositivo com o aplicativo.
+2. Cliente entra no aplicativo.
 3. Cliente se autentica. 
 4. Cliente entra com o valor de depósito.
-5. Cliente recebe um código do Sistema enviado pelo MultiBank(se for no aplicativo)
-6. Cliente entra com o codigo(se for no aplicativo)
+5. Cliente recebe um código do Sistema enviado pelo MultiBank.
+6. Cliente entra com o codigo.
 7. Sistema registra e autoriza o depósito segundo um conjunto de regras de depósito.
 8. Cliente insere o dinheiro no local destinado.
 9. Sistema informa que a operação foi realizada com sucesso.
 10. Sistema atualiza o saldo.
 11. Sistema emite comprovante de depósito.
-12. Cliente encerra sua sessão no aplicativo ou retira o cartão.
+12. Cliente encerra sua sessão no aplicativo.
 13. Cliente vai embora com comprovante(se o depósito ocorreu). 
 
 Extensões (ou Fluxos Alternativos).
-1. Cliente usa aplicativo sem está no multibank.
+1. Cliente chega ao MultiBank com o cartão.
+      1.1 MultiBank não reconhece o cartão
+           1. Sistema envia uma mensagem de alerta para a equipe de monitoramento.
+           2. É exibida uma mensagem de cartão não reconhecido.
+	   3. Solicita a inserção do cartão novamente.
+	   
+      1.3 Erro de autenticação
+            1. Sistena avisa o erro e rejeita a entrada.
+	    2. Sistema solicita a inserção novamente.
+
+2. Cliente usa aplicativo sem está no multibank.
       1. Cliente informa o valor de depósito.
       2. Sistema gera um boleto à ser pago com o valor informado.
       3. Sistema envia o boleto ao e-mail cadastrado no aplicativo.
       4. Saldo é atualizado após o pagamento do boleto.
       
-2. MultiBank não reconhece o cartão (se for no cartão).
-      1. Sistema envia uma mensagem de alerta para a equipe de monitoramento.
-      2. É exibida uma mensagem de cartão não reconhecido.
-      3. Solicita a inserção do cartão novamente.
-      
 3. Erro de autenticação.
-      3.1. Se for no cartão.
-            1. Sistena avisa o erro e rejeita a entrada.
-	    2. Sistema solicita a inserção novamente.
-      3.2. Se for no aplicativo.
-	    1. Sistena avisa o erro e rejeita a entrada.
-	    2. Sistema solicita a inserção dos dados novamente.
+      1. Sistena avisa o erro e rejeita a entrada.
+      2. Sistema solicita a inserção dos dados novamente.
               
 4a. Cliente pede para cancelar o depósito.
        1. Sistema cancela o depósito.
@@ -59,7 +60,7 @@ Extensões (ou Fluxos Alternativos).
       1. Sistema reinicia esse serviço e continua.
             1.1 Sistema detecta que o serviço nao reinicia.
 	          1. Sistema avisa o erro.
-		  2. Sistema informa a opçao de depósito com o cartão ou finaliza a chamada. 
+		  2. Sistema finaliza a chamada. 
                   
 6. Código inválido (não encontrado no sistema).
       1. Sistema avisa o erro e rejeita a entrada.
