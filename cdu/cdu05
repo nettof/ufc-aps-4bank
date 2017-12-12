@@ -24,14 +24,6 @@ Cenário de sucesso principal (Fluxo Básico):
 6. Cliente visualiza o extrato.
 7. Cliente encerra sua sessão e fecha o App. 
 
-1. Cliente entra no App ou insere cartão.
-2. Cliente se autentica.
-3. Cliente vai a ferramenta de retirada de extrato
-4. Sistema gera o extrato.
-5. Sistema registra a operação.
-6. Cliente visualiza o extrato
-7. Cliente encerra sua sessão e fecha o App. 
-
 Extensões (Fluxos Alternativos)
 1. Cliente chega ao MultiBank com o cartão.
       1.1 MultiBank não reconhece o cartão
