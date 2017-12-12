@@ -29,16 +29,6 @@ Cenário de sucesso principal (ou Fluxo Básico):
 8. Sistema gera um comprovante de transferência.
 9. Cliente encerra sua sessão e fecha o App.   
 
-1. Cliente entra no App ou insere cartão.
-2. Cliente se autentica.
-3. Cliente vai a ferramenta de transação
-4. Cliente insere os dados da conta referente a conta destinatária e o valor de transferência.
-5. Sistema registra e autoriza a transferência segundo um conjunto de regras de transferência.
-6. Sistema informa que a operação foi realizada com sucesso.
-7. Sistema atualiza o saldo.
-8. Sistema gera um comprovante de transferência.
-9. Cliente encerra sua sessão e fecha o App.   
-
 Extensões (ou Fluxos Alternativos).
 1. Cliente chega ao MultiBank com o cartão.
       1.1 MultiBank não reconhece o cartão
