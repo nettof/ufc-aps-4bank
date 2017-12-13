@@ -1,1 +1,7 @@
-
+* [All](https://github.com/nettof/ufc-aps-4bank/blob/master/class_diagrams/Class%20Diagram%20-%20ALL.png)
+* [Depósito](https://github.com/nettof/ufc-aps-4bank/blob/master/class_diagrams/Class%20Diagram%20-%20DEPOSITO.png)
+* [Emitir Extrato](https://github.com/nettof/ufc-aps-4bank/blob/master/class_diagrams/Class%20Diagram%20-%20EMITIR%20EXTRATO.png)
+* [Saque](https://github.com/nettof/ufc-aps-4bank/blob/master/class_diagrams/Class%20Diagram%20-%20SAQUE.png)
+* [Saque - Código](https://github.com/nettof/ufc-aps-4bank/blob/master/class_diagrams/Class%20Diagram%20-%20SAQUE%20-%20Codigo.png)
+* [Titularizar](https://github.com/nettof/ufc-aps-4bank/blob/master/class_diagrams/Class%20Diagram%20-%20TITULARIZAR.png)
+* [Transferência](https://github.com/nettof/ufc-aps-4bank/blob/master/class_diagrams/Class%20Diagram%20-%20TRANSFERENCIA.png)
