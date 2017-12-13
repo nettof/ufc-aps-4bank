@@ -1,0 +1,4 @@
+O RepositorioCliente e RepositorioConta são especialistas da informação, 
+pois possuem capacidade e informaçoes 
+para realizar suas operacoes. Por exemplo, dado um id posso recuperar
+um cliente ou uma conta. 
