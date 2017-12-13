@@ -69,7 +69,7 @@ public class ServicoUsuarioTeste {
 	    float saldoAnterior = c.getSaldo();
 	    ServicoUsuario.realizarDeposito(c1, 2000);
 		ServicoUsuario.realizarTransferencia(c1, 920390, 400);
-		if(c.getSaldo() < 10) {
+		if(c.getSaldo() < 400) {
 			assertEquals(c.getSaldo(), saldoAnterior, 0);
 		} else assertNotEquals(c.getSaldo(), saldoAnterior, 0);
 	}
